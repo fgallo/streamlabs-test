@@ -16,9 +16,10 @@ class UserViewController: UIViewController {
     
     private let minGlowSize: CGFloat = 0.0
     private let maxGlowSize: CGFloat = 80.0
+    private let fontMaxSize: CGFloat = 34
     private let animDuration = 0.3
     private var counter = 1
-    private var fontSize: CGFloat = 12
+    private var fontSize: CGFloat = 24
     private var bounce = false
 
     override func viewDidLoad() {
@@ -68,7 +69,7 @@ class UserViewController: UIViewController {
     private func updateCounterLabel() {
         counterLabel.text = "\(counter)"
         counter += 1
-        fontSize += 1
+        fontSize = min(fontSize + 1, fontMaxSize)
     }
     
     
@@ -108,7 +109,7 @@ class UserViewController: UIViewController {
     
     private func createAnimationLabel(withNumber number: Int, withSize size: CGFloat) {
         let label = UILabel(frame: CGRect(origin: .zero,
-                                          size: CGSize(width: size*3, height: size*3)))
+                                          size: CGSize(width: size*2, height: size*2)))
         label.text = "+\(number)"
         label.textColor = UIColor.random()
         label.textAlignment = .center
@@ -119,7 +120,7 @@ class UserViewController: UIViewController {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        let numberImageView = UIImageView(frame: starButton.frame)
+        let numberImageView = UIImageView(frame: label.bounds)
         numberImageView.image = image
         view.addSubview(numberImageView)
         
