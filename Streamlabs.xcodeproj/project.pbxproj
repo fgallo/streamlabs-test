@@ -1,0 +1,896 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CABAEF722FF7D0CDDD6BE95 /* Pods_StreamlabsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C136B57AE05AAF66CFA83B37 /* Pods_StreamlabsUITests.framework */; };
+		2859D3B079F1A685A2A16DBC /* Pods_StreamlabsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B9F1BF147D48CB83F72F66 /* Pods_StreamlabsTests.framework */; };
+		345B795B8CFCA974BD9959B8 /* Pods_Streamlabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDCAE13C594D49C6EF78D155 /* Pods_Streamlabs.framework */; };
+		A278C5BB228F1EEE002E4F6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C5BA228F1EEE002E4F6F /* AppDelegate.swift */; };
+		A278C5C0228F1EEE002E4F6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A278C5BE228F1EEE002E4F6F /* Main.storyboard */; };
+		A278C5C2228F1EEF002E4F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A278C5C1228F1EEF002E4F6F /* Assets.xcassets */; };
+		A278C5C5228F1EEF002E4F6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A278C5C3228F1EEF002E4F6F /* LaunchScreen.storyboard */; };
+		A278C5D0228F1EEF002E4F6F /* StreamlabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C5CF228F1EEF002E4F6F /* StreamlabsTests.swift */; };
+		A278C5DB228F1EEF002E4F6F /* StreamlabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C5DA228F1EEF002E4F6F /* StreamlabsUITests.swift */; };
+		A278C5ED228F2308002E4F6F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C5EC228F2308002E4F6F /* MainViewController.swift */; };
+		A278C5EF228F232A002E4F6F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C5EE228F232A002E4F6F /* MainViewModel.swift */; };
+		A278C5F2228F23AC002E4F6F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C5F1228F23AC002E4F6F /* UIColor.swift */; };
+		A278C5F4228F25E7002E4F6F /* TwitchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C5F3228F25E7002E4F6F /* TwitchAPI.swift */; };
+		A278C5F7228F26C5002E4F6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C5F6228F26C5002E4F6F /* Constants.swift */; };
+		A278C5F9228F2A2A002E4F6F /* FeaturedStreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C5F8228F2A2A002E4F6F /* FeaturedStreamsViewController.swift */; };
+		A278C5FB228F2A3C002E4F6F /* FeaturedStreamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C5FA228F2A3C002E4F6F /* FeaturedStreamsViewModel.swift */; };
+		A278C5FE228F2B81002E4F6F /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C5FD228F2B81002E4F6F /* Stream.swift */; };
+		A278C601228F304F002E4F6F /* FeaturedStreamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C5FF228F304F002E4F6F /* FeaturedStreamCollectionViewCell.swift */; };
+		A278C602228F304F002E4F6F /* FeaturedStreamCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A278C600228F304F002E4F6F /* FeaturedStreamCollectionViewCell.xib */; };
+		A278C605228F3C5B002E4F6F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C604228F3C5B002E4F6F /* User.swift */; };
+		A278C607228F471B002E4F6F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C606228F471B002E4F6F /* UIView.swift */; };
+		A278C609228F4D0D002E4F6F /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C608228F4D0D002E4F6F /* TitleViewController.swift */; };
+		A278C60B228F4EA2002E4F6F /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C60A228F4EA2002E4F6F /* Clip.swift */; };
+		A278C60D228F59B7002E4F6F /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C60C228F59B7002E4F6F /* UIStoryboard.swift */; };
+		A278C60F228F5EA4002E4F6F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C60E228F5EA4002E4F6F /* Double.swift */; };
+		A278C611228F5F5D002E4F6F /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C610228F5F5D002E4F6F /* Int.swift */; };
+		A278C613228F61C8002E4F6F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C612228F61C8002E4F6F /* Date.swift */; };
+		A278C615228F6A8E002E4F6F /* ClipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C614228F6A8E002E4F6F /* ClipViewController.swift */; };
+		A278C617228F76F5002E4F6F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C616228F76F5002E4F6F /* ChatViewController.swift */; };
+		A278C61A228F7777002E4F6F /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C618228F7777002E4F6F /* ChatTableViewCell.swift */; };
+		A278C61B228F7777002E4F6F /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A278C619228F7777002E4F6F /* ChatTableViewCell.xib */; };
+		A278C61D228F77D9002E4F6F /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C61C228F77D9002E4F6F /* ChatViewModel.swift */; };
+		A278C61F228F77FD002E4F6F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C61E228F77FD002E4F6F /* Message.swift */; };
+		A278C621228F7F2E002E4F6F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C620228F7F2E002E4F6F /* UserViewController.swift */; };
+		A278C623228F9567002E4F6F /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278C622228F9567002E4F6F /* CGFloat.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A278C5CC228F1EEF002E4F6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A278C5AF228F1EEE002E4F6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A278C5B6228F1EEE002E4F6F;
+			remoteInfo = Streamlabs;
+		};
+		A278C5D7228F1EEF002E4F6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A278C5AF228F1EEE002E4F6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A278C5B6228F1EEE002E4F6F;
+			remoteInfo = Streamlabs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		032EB756BB1DAA37BCDBE618 /* Pods-StreamlabsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamlabsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreamlabsTests/Pods-StreamlabsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0AE3DA9E982720134873A6C0 /* Pods-StreamlabsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamlabsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreamlabsUITests/Pods-StreamlabsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		18B9F1BF147D48CB83F72F66 /* Pods_StreamlabsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamlabsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35BDB33FC6B42F367F66F5C5 /* Pods-Streamlabs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Streamlabs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Streamlabs/Pods-Streamlabs.release.xcconfig"; sourceTree = "<group>"; };
+		482040961F8F73EBB98870AD /* Pods-StreamlabsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamlabsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreamlabsUITests/Pods-StreamlabsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		797A1DEEE4B1A8783C861079 /* Pods-Streamlabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Streamlabs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Streamlabs/Pods-Streamlabs.debug.xcconfig"; sourceTree = "<group>"; };
+		A278C5B7228F1EEE002E4F6F /* Streamlabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Streamlabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A278C5BA228F1EEE002E4F6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A278C5BF228F1EEE002E4F6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A278C5C1228F1EEF002E4F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A278C5C4228F1EEF002E4F6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A278C5C6228F1EEF002E4F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A278C5CB228F1EEF002E4F6F /* StreamlabsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamlabsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A278C5CF228F1EEF002E4F6F /* StreamlabsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamlabsTests.swift; sourceTree = "<group>"; };
+		A278C5D1228F1EEF002E4F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A278C5D6228F1EEF002E4F6F /* StreamlabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamlabsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A278C5DA228F1EEF002E4F6F /* StreamlabsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamlabsUITests.swift; sourceTree = "<group>"; };
+		A278C5DC228F1EEF002E4F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A278C5EC228F2308002E4F6F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A278C5EE228F232A002E4F6F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A278C5F1228F23AC002E4F6F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A278C5F3228F25E7002E4F6F /* TwitchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchAPI.swift; sourceTree = "<group>"; };
+		A278C5F6228F26C5002E4F6F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A278C5F8228F2A2A002E4F6F /* FeaturedStreamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedStreamsViewController.swift; sourceTree = "<group>"; };
+		A278C5FA228F2A3C002E4F6F /* FeaturedStreamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedStreamsViewModel.swift; sourceTree = "<group>"; };
+		A278C5FD228F2B81002E4F6F /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		A278C5FF228F304F002E4F6F /* FeaturedStreamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedStreamCollectionViewCell.swift; sourceTree = "<group>"; };
+		A278C600228F304F002E4F6F /* FeaturedStreamCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedStreamCollectionViewCell.xib; sourceTree = "<group>"; };
+		A278C604228F3C5B002E4F6F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A278C606228F471B002E4F6F /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A278C608228F4D0D002E4F6F /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
+		A278C60A228F4EA2002E4F6F /* Clip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clip.swift; sourceTree = "<group>"; };
+		A278C60C228F59B7002E4F6F /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		A278C60E228F5EA4002E4F6F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		A278C610228F5F5D002E4F6F /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		A278C612228F61C8002E4F6F /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		A278C614228F6A8E002E4F6F /* ClipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipViewController.swift; sourceTree = "<group>"; };
+		A278C616228F76F5002E4F6F /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A278C618228F7777002E4F6F /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		A278C619228F7777002E4F6F /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		A278C61C228F77D9002E4F6F /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		A278C61E228F77FD002E4F6F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A278C620228F7F2E002E4F6F /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		A278C622228F9567002E4F6F /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		BDCAE13C594D49C6EF78D155 /* Pods_Streamlabs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Streamlabs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C136B57AE05AAF66CFA83B37 /* Pods_StreamlabsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamlabsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E56BA7AACCD089E6DDFA6989 /* Pods-StreamlabsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamlabsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreamlabsTests/Pods-StreamlabsTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A278C5B4228F1EEE002E4F6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345B795B8CFCA974BD9959B8 /* Pods_Streamlabs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A278C5C8228F1EEF002E4F6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2859D3B079F1A685A2A16DBC /* Pods_StreamlabsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A278C5D3228F1EEF002E4F6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CABAEF722FF7D0CDDD6BE95 /* Pods_StreamlabsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00D3EDD051306DE625B624BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDCAE13C594D49C6EF78D155 /* Pods_Streamlabs.framework */,
+				18B9F1BF147D48CB83F72F66 /* Pods_StreamlabsTests.framework */,
+				C136B57AE05AAF66CFA83B37 /* Pods_StreamlabsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A278C5AE228F1EEE002E4F6F = {
+			isa = PBXGroup;
+			children = (
+				A278C5B9228F1EEE002E4F6F /* Streamlabs */,
+				A278C5CE228F1EEF002E4F6F /* StreamlabsTests */,
+				A278C5D9228F1EEF002E4F6F /* StreamlabsUITests */,
+				A278C5B8228F1EEE002E4F6F /* Products */,
+				CB2113DBE2120C0CD4485A8E /* Pods */,
+				00D3EDD051306DE625B624BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A278C5B8228F1EEE002E4F6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A278C5B7228F1EEE002E4F6F /* Streamlabs.app */,
+				A278C5CB228F1EEF002E4F6F /* StreamlabsTests.xctest */,
+				A278C5D6228F1EEF002E4F6F /* StreamlabsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A278C5B9228F1EEE002E4F6F /* Streamlabs */ = {
+			isa = PBXGroup;
+			children = (
+				A278C5E8228F21B9002E4F6F /* AppDelegate */,
+				A278C5E9228F21BF002E4F6F /* API */,
+				A278C5FC228F2B75002E4F6F /* Model */,
+				A278C5EA228F21F0002E4F6F /* View */,
+				A278C5EB228F21F4002E4F6F /* ViewModel */,
+				A278C5F0228F237C002E4F6F /* Extensions */,
+				A278C5F5228F26B6002E4F6F /* Helpers */,
+				A278C5C1228F1EEF002E4F6F /* Assets.xcassets */,
+				A278C5BE228F1EEE002E4F6F /* Main.storyboard */,
+				A278C5C3228F1EEF002E4F6F /* LaunchScreen.storyboard */,
+				A278C5C6228F1EEF002E4F6F /* Info.plist */,
+			);
+			path = Streamlabs;
+			sourceTree = "<group>";
+		};
+		A278C5CE228F1EEF002E4F6F /* StreamlabsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A278C5CF228F1EEF002E4F6F /* StreamlabsTests.swift */,
+				A278C5D1228F1EEF002E4F6F /* Info.plist */,
+			);
+			path = StreamlabsTests;
+			sourceTree = "<group>";
+		};
+		A278C5D9228F1EEF002E4F6F /* StreamlabsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A278C5DA228F1EEF002E4F6F /* StreamlabsUITests.swift */,
+				A278C5DC228F1EEF002E4F6F /* Info.plist */,
+			);
+			path = StreamlabsUITests;
+			sourceTree = "<group>";
+		};
+		A278C5E8228F21B9002E4F6F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A278C5BA228F1EEE002E4F6F /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A278C5E9228F21BF002E4F6F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A278C5F3228F25E7002E4F6F /* TwitchAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A278C5EA228F21F0002E4F6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A278C616228F76F5002E4F6F /* ChatViewController.swift */,
+				A278C618228F7777002E4F6F /* ChatTableViewCell.swift */,
+				A278C619228F7777002E4F6F /* ChatTableViewCell.xib */,
+				A278C614228F6A8E002E4F6F /* ClipViewController.swift */,
+				A278C5F8228F2A2A002E4F6F /* FeaturedStreamsViewController.swift */,
+				A278C5FF228F304F002E4F6F /* FeaturedStreamCollectionViewCell.swift */,
+				A278C600228F304F002E4F6F /* FeaturedStreamCollectionViewCell.xib */,
+				A278C5EC228F2308002E4F6F /* MainViewController.swift */,
+				A278C608228F4D0D002E4F6F /* TitleViewController.swift */,
+				A278C620228F7F2E002E4F6F /* UserViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A278C5EB228F21F4002E4F6F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A278C61C228F77D9002E4F6F /* ChatViewModel.swift */,
+				A278C5FA228F2A3C002E4F6F /* FeaturedStreamsViewModel.swift */,
+				A278C5EE228F232A002E4F6F /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A278C5F0228F237C002E4F6F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A278C622228F9567002E4F6F /* CGFloat.swift */,
+				A278C612228F61C8002E4F6F /* Date.swift */,
+				A278C60E228F5EA4002E4F6F /* Double.swift */,
+				A278C610228F5F5D002E4F6F /* Int.swift */,
+				A278C5F1228F23AC002E4F6F /* UIColor.swift */,
+				A278C60C228F59B7002E4F6F /* UIStoryboard.swift */,
+				A278C606228F471B002E4F6F /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A278C5F5228F26B6002E4F6F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A278C5F6228F26C5002E4F6F /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A278C5FC228F2B75002E4F6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A278C60A228F4EA2002E4F6F /* Clip.swift */,
+				A278C5FD228F2B81002E4F6F /* Stream.swift */,
+				A278C604228F3C5B002E4F6F /* User.swift */,
+				A278C61E228F77FD002E4F6F /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB2113DBE2120C0CD4485A8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				797A1DEEE4B1A8783C861079 /* Pods-Streamlabs.debug.xcconfig */,
+				35BDB33FC6B42F367F66F5C5 /* Pods-Streamlabs.release.xcconfig */,
+				032EB756BB1DAA37BCDBE618 /* Pods-StreamlabsTests.debug.xcconfig */,
+				E56BA7AACCD089E6DDFA6989 /* Pods-StreamlabsTests.release.xcconfig */,
+				0AE3DA9E982720134873A6C0 /* Pods-StreamlabsUITests.debug.xcconfig */,
+				482040961F8F73EBB98870AD /* Pods-StreamlabsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A278C5B6228F1EEE002E4F6F /* Streamlabs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A278C5DF228F1EEF002E4F6F /* Build configuration list for PBXNativeTarget "Streamlabs" */;
+			buildPhases = (
+				B5F1D267B4C30E74EBFD8DBC /* [CP] Check Pods Manifest.lock */,
+				A278C5B3228F1EEE002E4F6F /* Sources */,
+				A278C5B4228F1EEE002E4F6F /* Frameworks */,
+				A278C5B5228F1EEE002E4F6F /* Resources */,
+				B14E1ECCCD7EB92D9A96051A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Streamlabs;
+			productName = Streamlabs;
+			productReference = A278C5B7228F1EEE002E4F6F /* Streamlabs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A278C5CA228F1EEF002E4F6F /* StreamlabsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A278C5E2228F1EEF002E4F6F /* Build configuration list for PBXNativeTarget "StreamlabsTests" */;
+			buildPhases = (
+				74B68DE57D19B051AF9BB523 /* [CP] Check Pods Manifest.lock */,
+				A278C5C7228F1EEF002E4F6F /* Sources */,
+				A278C5C8228F1EEF002E4F6F /* Frameworks */,
+				A278C5C9228F1EEF002E4F6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A278C5CD228F1EEF002E4F6F /* PBXTargetDependency */,
+			);
+			name = StreamlabsTests;
+			productName = StreamlabsTests;
+			productReference = A278C5CB228F1EEF002E4F6F /* StreamlabsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A278C5D5228F1EEF002E4F6F /* StreamlabsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A278C5E5228F1EEF002E4F6F /* Build configuration list for PBXNativeTarget "StreamlabsUITests" */;
+			buildPhases = (
+				9A30B3774EC61B9781DB8CEA /* [CP] Check Pods Manifest.lock */,
+				A278C5D2228F1EEF002E4F6F /* Sources */,
+				A278C5D3228F1EEF002E4F6F /* Frameworks */,
+				A278C5D4228F1EEF002E4F6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A278C5D8228F1EEF002E4F6F /* PBXTargetDependency */,
+			);
+			name = StreamlabsUITests;
+			productName = StreamlabsUITests;
+			productReference = A278C5D6228F1EEF002E4F6F /* StreamlabsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A278C5AF228F1EEE002E4F6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Fernando Gallo";
+				TargetAttributes = {
+					A278C5B6228F1EEE002E4F6F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A278C5CA228F1EEF002E4F6F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A278C5B6228F1EEE002E4F6F;
+					};
+					A278C5D5228F1EEF002E4F6F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A278C5B6228F1EEE002E4F6F;
+					};
+				};
+			};
+			buildConfigurationList = A278C5B2228F1EEE002E4F6F /* Build configuration list for PBXProject "Streamlabs" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A278C5AE228F1EEE002E4F6F;
+			productRefGroup = A278C5B8228F1EEE002E4F6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A278C5B6228F1EEE002E4F6F /* Streamlabs */,
+				A278C5CA228F1EEF002E4F6F /* StreamlabsTests */,
+				A278C5D5228F1EEF002E4F6F /* StreamlabsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A278C5B5228F1EEE002E4F6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A278C602228F304F002E4F6F /* FeaturedStreamCollectionViewCell.xib in Resources */,
+				A278C5C5228F1EEF002E4F6F /* LaunchScreen.storyboard in Resources */,
+				A278C61B228F7777002E4F6F /* ChatTableViewCell.xib in Resources */,
+				A278C5C2228F1EEF002E4F6F /* Assets.xcassets in Resources */,
+				A278C5C0228F1EEE002E4F6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A278C5C9228F1EEF002E4F6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A278C5D4228F1EEF002E4F6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74B68DE57D19B051AF9BB523 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StreamlabsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A30B3774EC61B9781DB8CEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StreamlabsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B14E1ECCCD7EB92D9A96051A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Streamlabs/Pods-Streamlabs-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Streamlabs/Pods-Streamlabs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5F1D267B4C30E74EBFD8DBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Streamlabs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A278C5B3228F1EEE002E4F6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A278C623228F9567002E4F6F /* CGFloat.swift in Sources */,
+				A278C5BB228F1EEE002E4F6F /* AppDelegate.swift in Sources */,
+				A278C621228F7F2E002E4F6F /* UserViewController.swift in Sources */,
+				A278C60B228F4EA2002E4F6F /* Clip.swift in Sources */,
+				A278C60F228F5EA4002E4F6F /* Double.swift in Sources */,
+				A278C5F2228F23AC002E4F6F /* UIColor.swift in Sources */,
+				A278C5ED228F2308002E4F6F /* MainViewController.swift in Sources */,
+				A278C5F4228F25E7002E4F6F /* TwitchAPI.swift in Sources */,
+				A278C611228F5F5D002E4F6F /* Int.swift in Sources */,
+				A278C613228F61C8002E4F6F /* Date.swift in Sources */,
+				A278C607228F471B002E4F6F /* UIView.swift in Sources */,
+				A278C615228F6A8E002E4F6F /* ClipViewController.swift in Sources */,
+				A278C60D228F59B7002E4F6F /* UIStoryboard.swift in Sources */,
+				A278C5FB228F2A3C002E4F6F /* FeaturedStreamsViewModel.swift in Sources */,
+				A278C5EF228F232A002E4F6F /* MainViewModel.swift in Sources */,
+				A278C5F7228F26C5002E4F6F /* Constants.swift in Sources */,
+				A278C5FE228F2B81002E4F6F /* Stream.swift in Sources */,
+				A278C601228F304F002E4F6F /* FeaturedStreamCollectionViewCell.swift in Sources */,
+				A278C5F9228F2A2A002E4F6F /* FeaturedStreamsViewController.swift in Sources */,
+				A278C61F228F77FD002E4F6F /* Message.swift in Sources */,
+				A278C605228F3C5B002E4F6F /* User.swift in Sources */,
+				A278C61A228F7777002E4F6F /* ChatTableViewCell.swift in Sources */,
+				A278C617228F76F5002E4F6F /* ChatViewController.swift in Sources */,
+				A278C61D228F77D9002E4F6F /* ChatViewModel.swift in Sources */,
+				A278C609228F4D0D002E4F6F /* TitleViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A278C5C7228F1EEF002E4F6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A278C5D0228F1EEF002E4F6F /* StreamlabsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A278C5D2228F1EEF002E4F6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A278C5DB228F1EEF002E4F6F /* StreamlabsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A278C5CD228F1EEF002E4F6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A278C5B6228F1EEE002E4F6F /* Streamlabs */;
+			targetProxy = A278C5CC228F1EEF002E4F6F /* PBXContainerItemProxy */;
+		};
+		A278C5D8228F1EEF002E4F6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A278C5B6228F1EEE002E4F6F /* Streamlabs */;
+			targetProxy = A278C5D7228F1EEF002E4F6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A278C5BE228F1EEE002E4F6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A278C5BF228F1EEE002E4F6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A278C5C3228F1EEF002E4F6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A278C5C4228F1EEF002E4F6F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A278C5DD228F1EEF002E4F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A278C5DE228F1EEF002E4F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A278C5E0228F1EEF002E4F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 797A1DEEE4B1A8783C861079 /* Pods-Streamlabs.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Streamlabs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fernandogallo.Streamlabs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A278C5E1228F1EEF002E4F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35BDB33FC6B42F367F66F5C5 /* Pods-Streamlabs.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Streamlabs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fernandogallo.Streamlabs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A278C5E3228F1EEF002E4F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 032EB756BB1DAA37BCDBE618 /* Pods-StreamlabsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StreamlabsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fernandogallo.StreamlabsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Streamlabs.app/Streamlabs";
+			};
+			name = Debug;
+		};
+		A278C5E4228F1EEF002E4F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E56BA7AACCD089E6DDFA6989 /* Pods-StreamlabsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StreamlabsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fernandogallo.StreamlabsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Streamlabs.app/Streamlabs";
+			};
+			name = Release;
+		};
+		A278C5E6228F1EEF002E4F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AE3DA9E982720134873A6C0 /* Pods-StreamlabsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StreamlabsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fernandogallo.StreamlabsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Streamlabs;
+			};
+			name = Debug;
+		};
+		A278C5E7228F1EEF002E4F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482040961F8F73EBB98870AD /* Pods-StreamlabsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StreamlabsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fernandogallo.StreamlabsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Streamlabs;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A278C5B2228F1EEE002E4F6F /* Build configuration list for PBXProject "Streamlabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A278C5DD228F1EEF002E4F6F /* Debug */,
+				A278C5DE228F1EEF002E4F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A278C5DF228F1EEF002E4F6F /* Build configuration list for PBXNativeTarget "Streamlabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A278C5E0228F1EEF002E4F6F /* Debug */,
+				A278C5E1228F1EEF002E4F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A278C5E2228F1EEF002E4F6F /* Build configuration list for PBXNativeTarget "StreamlabsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A278C5E3228F1EEF002E4F6F /* Debug */,
+				A278C5E4228F1EEF002E4F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A278C5E5228F1EEF002E4F6F /* Build configuration list for PBXNativeTarget "StreamlabsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A278C5E6228F1EEF002E4F6F /* Debug */,
+				A278C5E7228F1EEF002E4F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A278C5AF228F1EEE002E4F6F /* Project object */;
+}
